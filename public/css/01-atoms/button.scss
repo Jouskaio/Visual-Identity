@@ -1,0 +1,15 @@
+.a-button {
+  height: 48px;
+  padding: 10px 24px;
+  text-decoration: none;
+  border: 1px solid var(--PLightest);
+  border-radius: 100px;
+  color: var(--PLightest);
+  font-family: "Fugue", sans-serif;
+  font-size: var(--FontSizeL);
+  text-align: center;
+  &:hover {
+    color: var(--AYellowGold);
+    border: 1px solid var(--AYellowGold);
+  }
+}

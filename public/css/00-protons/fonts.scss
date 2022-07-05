@@ -1,0 +1,84 @@
+/* IMPORTS FONTS */
+// Apple Color Emoji : emoji
+@font-face {
+  font-family: "Apple Color Emoji";
+  src: url("/public/fonts/AppleColorEmoji.ttf") format("ttf");
+}
+
+// BauPro
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro.ttf") format("ttf");
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Italic.ttf") format("ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-MediumItalic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Super.ttf") format("ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-SuperItalic.ttf") format("ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+// Fugue
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-DemiBold.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+
+:root {
+  --FontFamilyTitles: "Fugue", sans-serif;
+  --FontFamilyMain: "BauPro", sans-serif;
+
+  --FontSizeXXL: 40px;
+  --FontSizeXL: 32px;
+  --FontSizeL: 20px;
+  --FontSizeM: 13px;
+  --FontSizeS: 16px;
+  --FontSizeXS: 13px;
+
+  --FontWeightBold: bold;
+  --FontWeightMedium: 500;
+  --FontWeightDemiBold: 600;
+}

@@ -1,0 +1,225 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:root {
+  --PDark: #050404;
+  --PDarkMedium: #181818;
+  --PLightest: #E3E3E3;
+  --PlightMedium: #A8A8A8;
+  --PLight: #787879;
+  --PError: #FF646C;
+  --PCodeBlueDark: #64B5FF;
+  --PCodeBlueLight: #64D0FF;
+  --colorShadow: rgba(0, 0, 0, 0.16);
+  --AYellowGold: #FACD3D;
+  --AGreenJade: #1BA098;
+  --APurple: #9946FF;
+  --AMagengta: #9D2567;
+  --ABlueDark: #5E8ABE;
+  --ABlueLight: #97B9E0; }
+
+/* IMPORTS FONTS */
+@font-face {
+  font-family: "Apple Color Emoji";
+  src: url("/public/fonts/AppleColorEmoji.ttf") format("ttf"); }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro.ttf") format("ttf"); }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Bold.ttf") format("ttf");
+  font-weight: bold; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: bold; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Italic.ttf") format("ttf");
+  font-style: italic; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Medium.ttf") format("ttf");
+  font-weight: 500; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-MediumItalic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-Super.ttf") format("ttf");
+  font-weight: 800; }
+@font-face {
+  font-family: "BauPro";
+  src: url("/public/fonts/BauPro-SuperItalic.ttf") format("ttf");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-Regular.otf") format("otf"); }
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: bold; }
+@font-face {
+  font-family: "Fugue";
+  src: url("/public/fonts/Fugue-DemiBold.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 600; }
+:root {
+  --FontFamilyTitles: "Fugue", sans-serif;
+  --FontFamilyMain: "BauPro", sans-serif;
+  --FontSizeXXL: 40px;
+  --FontSizeXL: 32px;
+  --FontSizeL: 20px;
+  --FontSizeM: 13px;
+  --FontSizeS: 16px;
+  --FontSizeXS: 13px;
+  --FontWeightBold: bold;
+  --FontWeightMedium: 500;
+  --FontWeightDemiBold: 600; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.a-button {
+  height: 48px;
+  padding: 10px 24px;
+  text-decoration: none;
+  border: 1px solid var(--PLightest);
+  border-radius: 100px;
+  color: var(--PLightest);
+  font-family: "Fugue", sans-serif;
+  font-size: var(--FontSizeL);
+  text-align: center; }
+  .a-button:hover {
+    color: var(--AYellowGold);
+    border: 1px solid var(--AYellowGold); }
+
+/*# sourceMappingURL=styles.css.map */
