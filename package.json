@@ -1,0 +1,31 @@
+{
+	"name":"visual-identity",
+	"version":"0.1.0",
+	"version": "1.0.0",
+  "description": "Atomic design used as Jouskaio's visual identity",
+  "main": "fractal.config.js",
+	"dependencies":
+		{
+		"@frctl/fractal":"^1.5.13"
+		},
+	"scripts":
+		{
+		"fractal:start":"fractal start --sync",
+		"fractal:build":"fractal build"
+		},
+		"repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jouskaio/Visual-Identity.git"
+  },
+  "keywords": [
+    "fractal",
+    "atomic-design",
+    "visual-identity"
+  ],
+  "author": "Jouskaio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jouskaio/Visual-Identity/issues"
+  },
+  "homepage": "https://github.com/Jouskaio/Visual-Identity#readme"
+}
