@@ -11,6 +11,8 @@ const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
 //const webUITheme = require('mono-fractal')({});
 //const nighthawkTheme = require("@gotoandplay/nighthawk");
+const hljs = require('highlight.js');
+
 
 /*
  * Give your project a title.
@@ -46,3 +48,32 @@ fractal.web.set('builder.dest', __dirname + '/build');
   // specify custom brand color to personalize theme
   brandColor: '#FACD3D'
 }));*/
+
+// ------------------------
+const lowercase = require('./helpers/lowercase');
+const {toLowerCase} = require("./helpers/lowercase");
+
+
+
+
+/**
+ * Adding helpers or custom function to hbs templates
+ */
+const hbs = require('@frctl/handlebars')({
+  helpers: {
+    // Call the function in hbs file with : {{lowercase "Title"}}
+    // Example of function directly include in the variable
+    uppercase: function(str) {
+      return str.toUpperCase();
+    },
+    // Example of function include from another file
+    // Source : https://stackoverflow.com/questions/38296667/getting-unexpected-token-export
+    lowercase: function (str) {
+      return lowercase.toLowerCase(str);
+    },
+
+  }
+  /* other configuration options here */
+});
+
+fractal.components.engine(hbs);

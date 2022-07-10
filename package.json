@@ -5,9 +5,10 @@
 	"main": "fractal.config.js",
 	"dependencies": {
 		"@frctl/fractal": "^1.5.13",
+		"@frctl/handlebars": "^1.2.14",
 		"@gotoandplay/nighthawk": "^1.6.0",
-		"mono-fractal": "^1.1.2",
-		"sass": "^1.53.0"
+		"highlight.js": "^11.5.1",
+		"mono-fractal": "^1.1.2"
 	},
 	"scripts": {
 		"fractal:start": "fractal start --sync",
@@ -27,5 +28,6 @@
 	"bugs": {
 		"url": "https://github.com/Jouskaio/Visual-Identity/issues"
 	},
-	"homepage": "https://github.com/Jouskaio/Visual-Identity#readme"
+	"homepage": "https://github.com/Jouskaio/Visual-Identity#readme",
+	"type": "commonjs"
 }
