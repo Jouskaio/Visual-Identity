@@ -9,6 +9,8 @@ const path = require('path');
  * Require the Fractal module
  */
 const fractal = module.exports = require('@frctl/fractal').create();
+//const webUITheme = require('mono-fractal')({});
+//const nighthawkTheme = require("@gotoandplay/nighthawk");
 
 /*
  * Give your project a title.
@@ -33,3 +35,14 @@ fractal.web.set('static.path', path.join(__dirname, '/public'));
 
 /* Set the static HTML build destination */
 fractal.web.set('builder.dest', __dirname + '/build');
+
+/**
+ * UI Theme : mono
+ */
+//fractal.web.theme(webUITheme); // use the sub-classed theme
+/*fractal.web.theme(nighthawkTheme({
+  // specify locale for build date in the sidebar
+  lang: 'et',
+  // specify custom brand color to personalize theme
+  brandColor: '#FACD3D'
+}));*/
