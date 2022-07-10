@@ -1,0 +1,21 @@
+.a-titleH1 {
+  font-size: var(--FontSizeXXL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px;
+}
+
+.a-titleH2 {
+  font-size: var(--FontSizeXL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px;
+  text-transform: lowercase;
+}
+
+.a-titleH3 {
+  font-size: var(--FontSizeL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px;
+}

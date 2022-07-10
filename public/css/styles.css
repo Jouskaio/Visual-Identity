@@ -122,6 +122,7 @@ table {
   border-spacing: 0; }
 
 :root {
+  color-scheme: dark;
   --CAccent: #FACD3D;
   --CBackground: #050404;
   --CContainer: #181818;
@@ -218,14 +219,34 @@ img {
   height: 48px;
   padding: 10px 24px;
   text-decoration: none;
-  border: 1px solid var(--PLightest);
+  border: 1px solid var(--CText);
   border-radius: 100px;
   color: var(--PLightest);
   font-family: "Fugue", sans-serif;
   font-size: var(--FontSizeL);
-  text-align: center; }
+  text-align: center;
+  margin-top: 16px; }
   .a-button:hover {
-    color: var(--AYellowGold);
-    border: 1px solid var(--AYellowGold); }
+    color: var(--CAccent);
+    border: 1px solid currentColor; }
+
+.a-titleH1 {
+  font-size: var(--FontSizeXXL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px; }
+
+.a-titleH2 {
+  font-size: var(--FontSizeXL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px;
+  text-transform: lowercase; }
+
+.a-titleH3 {
+  font-size: var(--FontSizeL);
+  font-family: Fugue, sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px; }
 
 /*# sourceMappingURL=styles.css.map */
