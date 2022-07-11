@@ -1,0 +1,13 @@
+context:
+  classname: "language-css"
+  content: " .a-titleH3 { \
+            font-size: var(--FontSizeL); \
+            font-family: Fugue, sans-serif; \
+            color: var(--CText); \
+            margin-bottom: 16px; \
+          } "
+preview:
+  stylesheets: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/dark.min.css"
+  scripts:
+    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"
+notes: "Don't forget to add the assets in your code manually with the library asked to render your code (not working on fractal)"

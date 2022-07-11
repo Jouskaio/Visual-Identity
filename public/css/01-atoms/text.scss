@@ -1,21 +1,63 @@
+// Title website
 .a-titleH1 {
   font-size: var(--FontSizeXXL);
-  font-family: Fugue, sans-serif;
+  font-family: "Fugue", sans-serif;
   color: var(--CText);
   margin-bottom: 16px;
 }
 
+// Title section
+// Lowercase
 .a-titleH2 {
   font-size: var(--FontSizeXL);
-  font-family: Fugue, sans-serif;
+  font-family: "Fugue", sans-serif;
   color: var(--CText);
   margin-bottom: 16px;
   text-transform: lowercase;
 }
 
+// Title article in home or news
+// No lowercase
 .a-titleH3 {
-  font-size: var(--FontSizeL);
-  font-family: Fugue, sans-serif;
+  font-size: var(--FontSizeXL);
+  font-family: "Fugue", sans-serif;
   color: var(--CText);
   margin-bottom: 16px;
+}
+
+// Title container passions
+.a-titleH4 {
+  font-size: var(--FontSizeL);
+  font-family: "Fugue", sans-serif;
+  color: var(--CText);
+  margin-bottom: 16px;
+}
+
+// News date
+.a-titleH5 {
+  font-size: var(--FontSizeS);
+  font-family: "Fugue", sans-serif;
+  color: var(--CText);
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Paragraph
+.a-text {
+  color: var(--CText);
+  font-family: "BauPro", sans-serif;
+  font-size: var(--FontSizeL);
+}
+
+// link
+.a-link {
+  color: var(--CAccent);
+  font-family: "BauPro", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: var(--FontSizeL);
+  &:hover {
+    text-decoration: underline currentColor;
+  }
 }
