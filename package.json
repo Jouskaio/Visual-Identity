@@ -7,7 +7,6 @@
 		"@frctl/fractal": "^1.5.13",
 		"@frctl/handlebars": "^1.2.14",
 		"@gotoandplay/nighthawk": "^1.6.0",
-		"highlight.js": "^11.5.1",
 		"mono-fractal": "^1.1.2"
 	},
 	"scripts": {

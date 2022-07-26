@@ -4,7 +4,6 @@
 * Require the path module
 */
 const path = require('path');
-
 /*
  * Require the Fractal module
  */
@@ -16,7 +15,8 @@ const fractal = module.exports = require('@frctl/fractal').create();
  * Give your project a title.
  */
 fractal.set('project.title', 'Visual Identity');
-
+fractal.set('project.version', 'v1.0');
+fractal.set('project.author', 'Jouskaio');
 /*
  * Tell Fractal where to look for components.
  */
@@ -67,5 +67,4 @@ const hbs = require('@frctl/handlebars')({
     }
   }
 });
-
 fractal.components.engine(hbs);
