@@ -121,29 +121,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/**
+Installation theme-color :
+  - Source : https://lukelowrey.com/css-variable-theme-switcher/
+ */
 :root {
-  color-scheme: dark;
-  --CAccent: #FACD3D;
-  --CBackground: #050404;
-  --CContainer: #181818;
-  --CText: #E3E3E3;
-  --CTextMedium: #A8A8A8;
-  --CDisabled: #787879;
-  --PDark: #050404;
-  --PDarkMedium: #181818;
-  --PLightest: #E3E3E3;
-  --PlightMedium: #A8A8A8;
-  --PLight: #787879;
-  --PError: #FF646C;
-  --PCodeBlueDark: #64B5FF;
-  --PCodeBlueLight: #64D0FF;
-  --colorShadow: rgba(0, 0, 0, 0.16);
-  --AYellowGold: #FACD3D;
-  --AGreenJade: #1BA098;
-  --APurple: #9946FF;
-  --AMagengta: #9D2567;
-  --ABlueDark: #5E8ABE;
-  --ABlueLight: #97B9E0; }
+  --accent-color: var(--accent-yellow);
+  --background-color: var(--primary-lightest);
+  --container-color: var(--primary-light-medium);
+  --text-color: var(--primary-darkest);
+  --text-medium-color: var(--primary-dark-medium);
+  --text-disabled: var(--primary-light);
+  --text-error: var(--primary-error);
+  --code-blue-light: var(--primary-code-blue-light);
+  --code-blue-dark: var(--primary-code-blue-dark);
+  --shadow: var(--primary-shadow);
+  --primary-darkest: #050404;
+  --primary-dark-medium: #181818;
+  --primary-lightest: #E3E3E3;
+  --primary-light-medium: #A8A8A8;
+  --primary-light: #787879;
+  --primary-error: #FF646C;
+  --primary-code-blue-dark: #64B5FF;
+  --primary-code-blue-light: #64D0FF;
+  --primary-shadow: rgba(0, 0, 0, 0.16);
+  --accent-yellow: #FACD3D;
+  --accent-green-jade: #1BA098;
+  --accent-purple: #9946FF;
+  --accent-magengta: #9D2567;
+  --accent-blue-dark: #5E8ABE;
+  --accent-blue-light: #97B9E0; }
+
+html[data-theme='dark'] {
+  --accent-color: var(--accent-yellow);
+  --background-color: var(--primary-darkest);
+  --container-color: var(--primary-dark-medium);
+  --text-color: var(--primary-lightest);
+  --text-medium-color: var(--primary-light-medium);
+  --text-disabled: var(--primary-light);
+  --text-error: var(--primary-error);
+  --code-blue-light: var(--primary-code-blue-light);
+  --code-blue-dark: var(--primary-code-blue-dark);
+  --shadow: var(--primary-shadow); }
+
+html[data-theme='light'] {
+  --accent-color: var(--accent-yellow);
+  --background-color: var(--primary-lightest);
+  --container-color: var(--primary-light-medium);
+  --text-color: var(--primary-darkest);
+  --text-medium-color: var(--primary-dark-medium);
+  --text-disabled: var(--primary-light);
+  --text-error: var(--primary-error);
+  --code-blue-light: var(--primary-code-blue-light);
+  --code-blue-dark: var(--primary-code-blue-dark);
+  --shadow: var(--primary-shadow); }
 
 /* IMPORTS FONTS */
 @font-face {
@@ -219,62 +250,67 @@ img {
   height: 48px;
   padding: 10px 24px;
   text-decoration: none;
-  border: 1px solid var(--CText);
+  border: 1px solid var(--text-color);
   border-radius: 100px;
-  color: var(--PLightest);
+  color: var(--text-color);
   font-family: "Fugue", sans-serif;
   font-size: var(--FontSizeL);
   text-align: center;
   margin-top: 16px; }
   .a-button:hover {
-    color: var(--CAccent);
+    color: var(--accent-color);
     border: 1px solid currentColor; }
 
 .a-titleH1 {
   font-size: var(--FontSizeXXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px; }
 
 .a-titleH2 {
   font-size: var(--FontSizeXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px;
   text-transform: lowercase; }
 
 .a-titleH3 {
   font-size: var(--FontSizeXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px; }
 
 .a-titleH4 {
   font-size: var(--FontSizeL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px; }
 
 .a-titleH5 {
   font-size: var(--FontSizeS);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase; }
 
 .a-text {
-  color: var(--CText);
+  color: var(--text-color);
   font-family: "BauPro", sans-serif;
   font-size: var(--FontSizeL); }
 
 .a-link {
-  color: var(--CAccent);
+  color: var(--text-color);
   font-family: "BauPro", sans-serif;
   font-style: italic;
   text-decoration: none;
   font-size: var(--FontSizeL); }
   .a-link:hover {
     text-decoration: underline currentColor; }
+
+.a-icon {
+  width: 24px; }
+  .a-icon:hover {
+    width: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

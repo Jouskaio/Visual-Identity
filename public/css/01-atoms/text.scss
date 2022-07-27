@@ -2,7 +2,7 @@
 .a-titleH1 {
   font-size: var(--FontSizeXXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px;
 }
 
@@ -11,7 +11,7 @@
 .a-titleH2 {
   font-size: var(--FontSizeXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px;
   text-transform: lowercase;
 }
@@ -21,7 +21,7 @@
 .a-titleH3 {
   font-size: var(--FontSizeXL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px;
 }
 
@@ -29,7 +29,7 @@
 .a-titleH4 {
   font-size: var(--FontSizeL);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 16px;
 }
 
@@ -37,7 +37,7 @@
 .a-titleH5 {
   font-size: var(--FontSizeS);
   font-family: "Fugue", sans-serif;
-  color: var(--CText);
+  color: var(--text-color);
   margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
@@ -45,14 +45,14 @@
 
 // Paragraph
 .a-text {
-  color: var(--CText);
+  color: var(--text-color);
   font-family: "BauPro", sans-serif;
   font-size: var(--FontSizeL);
 }
 
 // link
 .a-link {
-  color: var(--CAccent);
+  color: var(--text-color);
   font-family: "BauPro", sans-serif;
   font-style: italic;
   text-decoration: none;

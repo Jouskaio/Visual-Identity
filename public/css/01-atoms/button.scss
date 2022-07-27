@@ -2,15 +2,15 @@
   height: 48px;
   padding: 10px 24px;
   text-decoration: none;
-  border: 1px solid var(--CText);
+  border: 1px solid var(--text-color);
   border-radius: 100px;
-  color: var(--PLightest);
+  color: var(--text-color);
   font-family: "Fugue", sans-serif;
   font-size: var(--FontSizeL);
   text-align: center;
   margin-top: 16px;
   &:hover {
-    color: var(--CAccent);
+    color: var(--accent-color);
     border: 1px solid currentColor;
   }
 }
